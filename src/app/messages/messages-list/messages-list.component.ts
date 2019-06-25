@@ -12,7 +12,7 @@ import * as LexRuntime from 'aws-sdk/clients/lexruntime';
   styleUrls: ['./messages-list.component.css']
 })
 export class MessagesListComponent implements OnInit {
-  lex: LexRuntime = new LexRuntime();
+  lex: LexRuntime ;
 
   messages: Message[] = [
     new Message(AppConstants.USER, 'Hi I am user'),
