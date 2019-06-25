@@ -1,0 +1,14 @@
+
+<div class="row">
+  <div class="col-xs-12">
+
+    <app-message *ngFor="let message of messages" [message]="message"></app-message>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+
+    <app-message-push (messageAdded)="onMessageAdded($event)"></app-message-push>
+  </div>
+</div>

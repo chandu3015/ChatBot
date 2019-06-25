@@ -1,0 +1,9 @@
+<a href="#" class="list-group-item clearfix"  >
+  <div [class]="getMessagePosition(message.owner)" >
+    <h4 class="list-group-item-heading">{{message.owner}}</h4>
+    <p class="list-group-item-text">{{message.message}}</p>
+  </div>
+  <span [class]="getMessagePosition(message.owner)">
+        <img [src]="getImage(message.owner)"  [alt]="message.owner"  class="img-responsive" style="max-height: 40px ; max-width: 40px">
+      </span>
+</a>
